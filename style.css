@@ -1,0 +1,644 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Poppins;
+    background-color: #B8C7F4;
+}
+
+/*Barra de Navegación*/
+.header {
+    background-color: #214ED3;
+    height: 45px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    }
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    }
+
+.logo{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    line-height: 35px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+.logo:hover{
+    background-color: #153084;
+    transition: 0.8s;
+    
+}
+
+.Nav-menu {
+    margin-right: 10px;
+    list-style: none;
+    display: flex;
+}
+
+.nav-menu-item{
+    font-size: 15px;
+    margin: 0 5px;
+    line-height: 45px;
+    width: max-content;
+}
+
+.nav-menu-link{
+    padding: 5px 10px;
+    border-radius: 8px;
+
+}
+.nav-menu-link:hover {
+    background-color: #153084;
+    transition: 0.8s;
+}
+
+.nav-boton{
+    color: #ffffff;
+    background: none;
+    border: none;
+    font-size: 20px;
+    padding: 0 15px;
+    line-height: 45px;
+    cursor: pointer;
+    display: none;
+     
+}
+
+.botondarkmode{
+    background-color: transparent;
+    border-style: none;
+    color: #fff;
+    font-size: 15px;
+    margin: 0 5px;
+}
+
+.botondarkmode:hover{
+    background-color: #153084;
+    transition: 0.8s;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+@media (max-width: 830px){
+    
+    body {
+        padding-top: 5px;
+    }
+    
+    .header {
+        height: 45px;
+     }      
+    
+     .logo{
+        font-size: 15px;
+        padding: 5px 5px;
+        line-height: 40px;
+        
+    }
+    
+    .logo:hover{
+        background-color: #153084;
+        transition: 0.8s;
+        
+    }
+    
+    .Nav-menu {
+        margin-right: 10px;
+        align-items: center;
+        flex-direction: column;
+        background-color: #153084 ;
+        position: fixed;
+        left: 0;
+        top: 45px;
+        width: 100%;
+        padding: 20px 0;
+
+        height: calc(100% - 45px);
+        overflow-y: auto ;
+
+        left: 100%;
+        transition: left 0.3s;
+    }
+    
+    .nav-menu-item{
+        line-height: 40px;
+        }
+    
+    .nav-menu-link{
+        padding: 12px 5px;
+        border-radius: 8px;
+    
+    }
+    .nav-menu-link:hover{
+        background:none;
+        color: #B8C7F4;
+    }
+
+    .nav-boton{
+        display: block; 
+     } 
+
+     .Nav-menu_visible {
+        left: 0%;
+     }
+
+     .texto, h3, p  {
+        font-size: 8.5px;
+        line-height: 100%;
+     }
+
+     .descargatexto {
+        font-size: 8.5px;
+     }
+
+     .container {
+        height: 185px;
+     }
+
+     .info, .icon {
+        padding-right: 10px;
+        padding-bottom: 1px;
+
+     }
+     
+}
+ 
+/*Sección Inicio*/
+
+.inicio{
+    margin-top: 60px;
+    
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card {
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 5px rgba(0,0,0,50);
+    cursor: default;
+    transition: all 400ms ease;
+    background-color: #6988E7;
+    display: flex;
+}
+
+.card img{
+    display: flex;
+    width: 25%;
+    height: auto;
+   
+}
+.texto{
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+}
+.card2{
+    align-items: center;
+    display: flex;
+}
+
+.descargatexto{
+    color: #f9f9f9;
+    text-decoration: none;
+}
+
+/*Perfil*/
+
+.perfil {
+    padding-top: 25px;
+    margin-left: 20px;
+} 
+
+.info {
+    display: flex;
+    padding: 5px 5px;
+     }
+
+.icon{
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.info12 {
+    display: flex;
+    font-size: 18px;
+    padding: 30px;
+}
+
+.info2 {
+    padding-left: 15px;
+}
+/*Aptitudes*/
+
+.aptitudes {
+    padding-top: 25px;
+    margin-left: 20px;
+}
+
+.hr2{
+    margin-bottom: 30px;
+}
+.textaptitudes{
+    font-size: 18px; 
+    padding: 30px;
+}
+.textaptitudes, p{
+    padding-top: 5px;
+    padding-bottom: 15px; 
+}
+
+/*Experiencia*/
+
+.experienciaslaborales{
+    padding-top: 25px;
+    margin-left: 20px;
+}
+
+.hr3 {
+    margin-bottom: 30px;
+}
+
+.exper{
+    display: flex;
+    margin-left: 30px;
+    
+}
+
+.fecha{
+    padding-right: 10px;    
+}
+
+.experiencias {
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+/*Formaciones*/
+
+.formación {
+    padding-top: 25px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.form{
+    display: flex;
+    margin-left: 30px;
+}
+
+.conocimientos {
+    margin: 5px 50px;
+    background-color:#6988E7;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+}
+ 
+.conocimientosX {
+    font-size: 15px;
+    padding-left: 15px;
+    
+ }
+
+ .progresoPhotoshop {
+    height: 100%;
+    background: #153084;
+    display: flex;
+    align-items: center;
+    transition: 1s;
+    border-radius: 20px;
+}
+.Photoshop{
+    display: flex;
+    padding-top: 15px;
+}
+
+.progresoIllustrator {
+    height: 100%;
+    background: #153084;
+    display: flex;
+    align-items: center;
+    transition: 1s;
+    border-radius: 20px;
+}
+.Illustrator{
+    display: flex;
+}
+
+.progresoLightroom {
+    height: 100%;
+    background: #153084;
+    display: flex;
+    align-items: center;
+    transition: 1s;
+    border-radius: 20px;
+}
+.Lightroom{
+    display: flex;
+    
+}
+
+.progresoAfterEffects {
+    height: 100%;
+    background: #153084;
+    display: flex;
+    align-items: center;
+    transition: 1s;
+    border-radius: 20px;
+}
+.AfterEffects{
+    display: flex;
+   
+}
+
+.progresoPremierePro {
+    height: 100%;
+    background: #153084;
+    display: flex;
+    align-items: center;
+    transition: 1s;
+    border-radius: 20px;
+}
+.PremierePro{
+    display: flex;
+    
+}
+
+.progresoPrestashop {
+    height: 100%;
+    background: #153084;
+    display: flex;
+    align-items: center;
+    transition: 1s;
+    border-radius: 20px;
+}
+.Prestashop{
+    display: flex;
+    
+}
+
+.progresoWordpress {
+    height: 100%;
+    background: #153084;
+    display: flex;
+    align-items: center;
+    transition: 1s;
+    border-radius: 20px;
+}
+.Wordpress{
+    display: flex;
+    
+}
+
+.idiomas, .p{
+    font-size: px;
+    
+}
+
+
+ .progreso {
+    height: 25px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #B8C7F4;
+    margin-bottom: 5px;
+}
+ 
+.progresoingles {
+    height: 100%;
+    background: #153084;
+    display: flex;
+    align-items: center;
+    transition: 1s;
+    border-radius: 20px;
+}
+ 
+.progresofrances {
+    height: 100%;
+    background: #153084;
+    display: flex;
+    align-items: center;
+    transition: 1s;
+    border-radius: 20px;
+}
+
+.progresoitaliano {
+    height: 100%;
+    background: #153084;
+    display: flex;
+    align-items: center;
+    transition: 1s;
+    border-radius: 20px;
+}
+
+
+.progresotexto {
+    margin-left: 10px;
+    font-weight: bold;
+    color: #B8C7F4;
+}
+
+.ingles{
+    display: flex;
+    margin: 0 15px;
+}
+
+.ingles, .progreso {
+    margin-left: 15px;
+}
+
+.frances{
+    display: flex;
+    margin: 0 15px;
+}
+
+.frances, .progreso {
+    margin-left: 15px;
+}
+
+.italiano{
+    display: flex;
+    margin: 0 15px;
+}
+
+.italiano, .progreso {
+    margin-left: 15px;
+}
+
+/*Informacion adicional*/
+
+.infoad {
+    padding-top: 25px;
+    margin-left: 20px;
+}
+.equipos{
+    padding: 15px 15px;
+    font-size: 18px;
+    
+}
+/*Contacto*/
+
+.contacto{
+    padding-top: 25px;
+    margin-left: 20px;
+}
+
+.hrcontacto{
+    margin-bottom: 20px;
+}
+
+form {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 10px; 
+    background-color: #153084;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+}
+
+.input{
+ border: solid 1px #153084;
+ background-color: #6988E7;
+ border-radius: 15px;
+ padding: 20px;
+ width: 300px;
+ box-shadow: 5px 5px 5px rgba(0,0,0,0.4); 
+ margin-top: 15px;
+}
+::placeholder{
+    color: #fff;
+}
+
+.boton{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 20px;
+    width: 50px;
+    border-radius: 15px;
+    background-color: #B8C7F4;
+    border-style: none;
+
+}
+
+/*footer*/
+
+footer{
+    background-color: #153084;
+    margin-top: 50px;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;    
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.textfooter{
+    padding-top: 15px;
+    text-align: center;
+}
+.redesiconfooter{
+    padding: 0 15px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+/*DarkMode*/
+
+
+
+body.darkmode{
+    background-color: #061E47;
+    color: #fff;
+    transition: 1s;
+}
+
+.darkmode header{
+    background-color: #061E47;
+    transition: 1s;
+}
+
+.darkmode .card{
+    background-color: #153084;
+    transition: 1s;
+}
+
+.darkmode .conocimientos{
+    background-color: #214ED3;
+    transition: 0.5s;
+}
+
+.darkmode .input{
+    background-color: #061E47;
+    transition: 1s;
+    
+}
+/*Boton flotante*/
+
+#btn-mas{
+    display: none;
+}
+
+.botoncontainer{
+    position: fixed;
+    bottom: 5px;
+    right: 20px;
+}
+
+.redesflotantes a, .redesicon{
+    display: block;
+    text-decoration: none;
+    background-color: #214ED3;
+    color: #fff;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 50%;
+    transition: all 500ms ease;
+    
+}
+
+.redesicon:hover{
+    background: #6988E7;
+    color: #061E47;
+
+}
+
+.redesflotantes a{
+    margin-bottom: -15px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#btn-mas:checked~ .redesflotantes a{
+    margin-bottom: 3px;
+    opacity: 1;
+    visibility: visible;
+}
