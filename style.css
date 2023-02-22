@@ -185,6 +185,10 @@ body {
     
 }
 
+.inicio h3{
+    margin-top: 25px;
+}
+
 .container {
     width: 100%;
     display: flex;
@@ -233,6 +237,10 @@ body {
     margin-left: 20px;
 } 
 
+.perfil h3{
+    margin-top: 25px;
+}
+
 .info {
     display: flex;
     padding: 5px 5px;
@@ -259,6 +267,10 @@ body {
     margin-left: 20px;
 }
 
+.aptitudes h3{
+    margin-top: 25px;
+}
+
 .hr2{
     margin-bottom: 30px;
 }
@@ -276,6 +288,10 @@ body {
 .experienciaslaborales{
     padding-top: 25px;
     margin-left: 20px;
+}
+
+.experienciaslaborales h3{
+    margin-top: 25px;
 }
 
 .hr3 {
@@ -303,6 +319,10 @@ body {
     padding-top: 25px;
     margin-left: 20px;
     font-size: 18px;
+}
+
+.formación h3{
+    margin-top: 25px;
 }
 
 .form{
@@ -505,6 +525,10 @@ body {
 .contacto{
     padding-top: 25px;
     margin-left: 20px;
+}
+
+.contacto h3{
+    margin-top: 25px;
 }
 
 .hrcontacto{
