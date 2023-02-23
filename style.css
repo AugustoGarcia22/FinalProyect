@@ -209,6 +209,10 @@ body {
     display: flex;
 }
 
+.inicio .card{
+    margin-top: 60px;
+}
+
 .card img{
     display: flex;
     width: 25%;
