@@ -128,11 +128,12 @@ body {
         width: 100%;
         padding: 20px 0;
 
-        height: calc(100% - 45px);
+        height: calc(60% - 45px);
         overflow-y: auto ;
 
         left: 100%;
         transition: left 0.3s;
+        border-radius: 0 0 20px 20px;
     }
     
     .nav-menu-item{
@@ -175,7 +176,8 @@ body {
         padding-bottom: 1px;
 
      }
-     
+
+      
 }
  
 /*Sección Inicio*/
@@ -192,6 +194,7 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
 .card {
     width: 100%;
     margin: 20px;
@@ -237,10 +240,6 @@ body {
     margin-left: 20px;
 } 
 
-.perfil h3{
-    margin-top: 25px;
-}
-
 .info {
     display: flex;
     padding: 5px 5px;
@@ -260,15 +259,16 @@ body {
 .info2 {
     padding-left: 15px;
 }
+
+.perfil h3{
+    margin-top: 25px;
+}
+
 /*Aptitudes*/
 
 .aptitudes {
     padding-top: 25px;
     margin-left: 20px;
-}
-
-.aptitudes h3{
-    margin-top: 25px;
 }
 
 .hr2{
@@ -283,15 +283,15 @@ body {
     padding-bottom: 15px; 
 }
 
+.aptitudes h3{
+    margin-top: 25px;
+}
+
 /*Experiencia*/
 
 .experienciaslaborales{
     padding-top: 25px;
     margin-left: 20px;
-}
-
-.experienciaslaborales h3{
-    margin-top: 25px;
 }
 
 .hr3 {
@@ -311,6 +311,10 @@ body {
 .experiencias {
     margin-top: 25px;
     font-size: 18px;
+}
+
+.experienciaslaborales h3{
+    margin-top: 25px;
 }
 
 /*Formaciones*/
@@ -666,4 +670,10 @@ body.darkmode{
     margin-bottom: 3px;
     opacity: 1;
     visibility: visible;
+}
+
+/*scroll*/
+
+html{
+    scroll-behavior: smooth;
 }
